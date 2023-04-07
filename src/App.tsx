@@ -120,22 +120,22 @@ function App(): JSX.Element {
 
     return (
         <div>
-            <h2>Compression de Huffman</h2>
+            <h2>The Huffman compression</h2>
             <div className="button-container">
                 <button onClick={handleCompressClick}>Compress</button>
                 <button onClick={handleDecompressClick}>Decompress</button>
             </div>
 
             <div className="input-container">
-                <label>Entrée :</label>
+                <label>Input :</label>
                 <input type="text" value={inputText} onChange={handleInputChange}/>
             </div>
             <div className="input-container">
-                <label>Sortie :</label>
+                <label>Compressed text :</label>
                 <textarea value={compressedText} className="output" readOnly/>
             </div>
             <div className="input-container">
-                <label>Texte décompressé :</label>
+                <label>Decompressed text :</label>
                 <textarea value={decompressedText} className="output" readOnly/>
             </div>
         </div>
